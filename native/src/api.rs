@@ -57,3 +57,20 @@ pub fn platform() -> Platform {
 pub fn rust_release_mode() -> bool {
     cfg!(not(debug_assertions))
 }
+
+pub enum ComplexEnum {
+    Platform(Platform)
+}
+
+pub struct OrAStruct {
+    field: String
+}
+
+pub struct StructWithComplexEnum {
+    data: ComplexEnum,
+    other_data: OrAStruct
+}
+
+pub fn example_func(_input: StructWithComplexEnum) {
+
+}
