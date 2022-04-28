@@ -63,12 +63,12 @@ pub enum ComplexEnum {
 }
 
 pub struct OrAStruct {
-    field: String
+    pub field: String
 }
 
 pub struct StructWithComplexEnum {
-    data: ComplexEnum,
-    other_data: OrAStruct
+    pub data: ComplexEnum,
+    pub other_data: OrAStruct
 }
 
 pub fn example_func(_input: StructWithComplexEnum) {
